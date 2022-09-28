@@ -1,6 +1,7 @@
 // import modules
 import "./form";
 import "./submit";
+import "./database";
 
 // import CSS files
 import "../css/index.css";
