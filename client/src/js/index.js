@@ -1,7 +1,6 @@
 // import modules
 import "./form";
 import "./submit";
-import "./database";
 
 // import CSS files
 import "../css/index.css";
@@ -15,8 +14,11 @@ import Dog from "../images/dog.png";
 import { Tooltip, Toast, Popover } from "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import { initDb } from "./database";
+
 // add images on load
 window.addEventListener("load", function () {
+  initDb();
   document.getElementById("logo").src = Logo;
   document.getElementById("bearThumbnail").src = Bear;
   document.getElementById("dogThumbnail").src = Dog;
